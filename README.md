@@ -1,74 +1,146 @@
-# flappyClone
+<p align="center">
+  <img src="https://img.shields.io/badge/Engine-Unity-3c77fa?style=for-the-badge&logo=unity" />
+  <img src="https://img.shields.io/badge/Language-C%23-239120?style=for-the-badge&logo=csharp" />
+  <img src="https://img.shields.io/badge/Platform-PC-2dba4e?style=for-the-badge" />
+</p>
 
-A simple Flappy Bird clone built with **Unity** and **C#**.
+# FlappyClone
 
-## Overview
+A Unity project that recreates the classic Flappy Bird gameplay using C#. This repository is organized according to Unity’s standards and includes all main assets, scripts, settings, and package dependencies necessary to run and modify the game.
 
-This project is a recreation of the classic Flappy Bird game, developed with Unity and written entirely in C#. It is designed for those interested in learning game development, Unity basics, and C# scripting.
+---
 
-## Features
+## 🚀 Features
 
-- Classic Flappy Bird gameplay: tap to fly, avoid pipes, and score points.
-- Built with the Unity engine for easy cross-platform deployment.
-- Clean, beginner-friendly C# codebase.
+- Faithful clone of the original Flappy Bird mechanics
+- Built with Unity and C# for easy extensibility
+- Modular structure: prefabs, scripts, scenes, sprites, and settings
+- Unity Input System integration
+- Universal Render Pipeline ready
 
-## Installation
+---
 
-### Prerequisites
+## 🧠 Skills Developed
 
-- [Unity Hub](https://unity.com/download) with Unity Editor (recommended: Unity 2020.3 LTS or newer)
-- [Git](https://git-scm.com/) for cloning the repository
+Working on this project allowed me to develop and strengthen the following skills:
 
-### Steps
+- **Unity Game Development:** Setting up projects, scene management, and using Unity Editor tools
+- **C# Programming:** Writing, organizing, and debugging efficient and modular game scripts
+- **Object-Oriented Design:** Creating reusable components and maintaining clean code architecture
+- **Physics Simulation:** Implementing 2D physics for realistic game mechanics and collision detection
+- **Prefab Management:** Designing and utilizing prefabs for scalable game objects (like pipes)
+- **Sprite & Asset Management:** Organizing and importing sprites and assets for optimal performance
+- **Input System Integration:** Configuring and handling user input using Unity’s new Input System
+- **UI Design:** Creating simple and responsive UI for score, game over, and instructions
+- **Render Pipeline Configuration:** Setting up and customizing Universal Render Pipeline (URP)
+- **Version Control:** Managing project files and collaborating with Git and GitHub
+- **Package Management:** Adding and updating dependencies via Unity’s Package Manager
+- **Project Organization:** Maintaining a clear and scalable project hierarchy
+
+---
+
+## 🗂️ Project Structure
+
+```
+.
+├── Assets/
+│   ├── DefaultVolumeProfile.asset
+│   ├── InputSystem_Actions.inputactions
+│   ├── Pipe.prefab
+│   ├── Sceness/
+│   ├── Script/
+│   ├── Settings/
+│   ├── Sprites/
+│   └── UniversalRenderPipelineGlobalSettings.asset
+├── Packages/
+│   ├── manifest.json
+│   └── packages-lock.json
+├── ProjectSettings/
+├── UserSettings/
+├── .gitignore
+├── .vsconfig
+├── README.md
+```
+- **Assets/**: Main game content, including prefabs (e.g. `Pipe.prefab`), input actions, render pipeline settings, and subfolders for scenes, scripts, settings, and sprites.
+- **Packages/**: Unity package manifest and lock file for dependency management.
+- **ProjectSettings/**: Configuration files for Unity project settings (audio, graphics, input, quality, etc.).
+- **UserSettings/**: User-specific preferences and layout info.
+- **.gitignore / .vsconfig**: Git and Visual Studio configuration.
+- **README.md**: This documentation file.
+
+View full file listing:  
+- [Assets/](https://github.com/khadimflash/flappyClone/tree/main/Assets)  
+- [Packages/](https://github.com/khadimflash/flappyClone/tree/main/Packages)  
+- [ProjectSettings/](https://github.com/khadimflash/flappyClone/tree/main/ProjectSettings)  
+- [UserSettings/](https://github.com/khadimflash/flappyClone/tree/main/UserSettings)  
+
+---
+
+## 🛠️ How to Run
 
 1. **Clone the Repository**
-
    ```bash
    git clone https://github.com/khadimflash/flappyClone.git
    ```
 
-2. **Open with Unity**
+2. **Open in Unity**
+   - Recommended Unity version: *(see `ProjectSettings/ProjectVersion.txt` for exact version)*
+   - Use the Unity Hub to add and open the project folder.
 
-   - Launch Unity Hub.
-   - Click on "Add" and select the cloned `flappyClone` project folder.
-   - Open the project in Unity.
-
-3. **Install Dependencies (if prompted)**
-
-   - Unity will automatically detect and install missing packages. Accept any prompts to update or import assets.
-
-4. **Run the Game**
-
-   - In Unity, open the main scene (usually named `Main.unity` or similar) from the `Assets/Scenes` folder.
-   - Click the "Play" button at the top of the Unity Editor to start the game.
-
-## How to Play
-
-- Press the `Space` bar (or tap/click, if running on mobile or with touch input) to make the bird flap upwards.
-- Avoid hitting the pipes or the ground to keep playing.
-- Try to achieve the highest score possible!
-
-## Building Standalone Versions
-
-To build the game for Windows, Mac, or WebGL:
-
-1. In Unity, go to `File > Build Settings`.
-2. Select your target platform (e.g., PC, Mac & Linux Standalone, WebGL).
-3. Click `Build` and choose an output directory.
-4. After building, run the executable or open the output folder for your chosen platform.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any changes or improvements. For major changes, open an issue first to discuss your proposed modifications.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Credits
-
-Inspired by the original Flappy Bird by Dong Nguyen.
+3. **Play**
+   - Open a scene from the `Assets/Sceness/` directory.
+   - Press the Play button in Unity Editor.
 
 ---
 
-Enjoy playing and learning with flappyClone!
+## 📁 Key Directories & Files
+
+- **Assets/Script/**: Contains all C# scripts for game logic.
+- **Assets/Sceness/**: Contains Unity scenes for different game states or levels.
+- **Assets/Sprites/**: Game art and sprites.
+- **Assets/Settings/**: Custom or project-wide settings.
+- **Packages/manifest.json**: Describes all required Unity packages, including dependencies like Input System or URP.
+- **ProjectSettings/**: Unity’s system and project configuration (audio, graphics, build, etc.).
+
+---
+
+## 🎮 Controls
+
+- Uses Unity's Input System (`Assets/InputSystem_Actions.inputactions`).
+- Controls can be customized via Unity’s Input System.
+
+---
+
+## ✨ Customization
+
+- Add or modify scripts in `Assets/Script/`.
+- Adjust game assets in `Assets/Sprites/` and prefabs in `Assets/`.
+- Change project settings via the Unity Editor or by editing files in `ProjectSettings/`.
+
+---
+
+## 📦 Dependencies
+
+- See `Packages/manifest.json` for a list of required Unity packages.
+- Universal Render Pipeline is set via `Assets/UniversalRenderPipelineGlobalSettings.asset`.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! Please fork this repository and submit any improvements you make.
+
+---
+
+## 📄 License
+
+Specify your license here.
+
+---
+
+> **Note:**  
+> Some directory listings above may be incomplete. Check the [Assets/](https://github.com/khadimflash/flappyClone/tree/main/Assets) folder on GitHub for the full asset list.
+
+---
+
+Made with ❤️ in Unity and C#
