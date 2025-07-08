@@ -130,11 +130,6 @@ View full file listing:
 
 Pull requests are welcome! Please fork this repository and submit any improvements you make.
 
----
-
-## 📄 License
-
-Specify your license here.
 
 ---
 
